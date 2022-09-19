@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <!-- DESDE BS v5 se usa bs como abajo -->
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- <div class="container pt-3">
+    
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">Fila 1/Col 1</div>
+            <div class="col-sm-6 col-md-3">Fila 1/Col 2</div>
+            <div class="col-sm-6 col-md-3">Fila 1/Col 3</div>
+            <div class="col-sm-6 col-md-3">Fila 1/Col 4</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 1</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 2</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 3</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 4</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 5</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 6</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 7</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 8</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 9</div>
+            <div class="col-sm-12 col-md-6 col-lg-auto">Fila 2/Col 10 </div>
+        </div>
+    </div> -->
+    <!-- HEADER -->
+    <nav
+      class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top"
+      id="navbar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            class="logo-brand"
+            src="Assets/img/platzi-logo.png"
+            alt="-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#main">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#place-time">Full Width</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#formulario">Form</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-info text-platzi"
+                data-bs-toggle="modal"
+                data-bs-target="#modalVersion"
+                href="#"
+                >v0.01</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN -->
+    <main id="main">
+      <div
+        id="carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Assets/img/hawaii.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="Assets/img/hawaii2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="Assets/img/hawaii3.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-end offset-md-6">
+                <h1>Slider Title</h1>
+                <p class="">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  voluptatibus provident, nihil accusamus, sequi minus autem
+                  illum facilis, molestias mollitia odio. Eligendi placeat quo
+                  voluptatibus sequi laboriosam nobis non. Laborum.
+                </p>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline-light"
+                  >Memes
+                </a>
+                <button
+                  class="btn btn-platzi"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalVersion"
+                >
+                  Visit Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- CARDS -->
+    <section id="cards">
+      <div class="speakers">
+        <div class="container">
+          <div class="row mb-4 mt-4">
+            <div class="col text-center text-uppercase">
+              <small
+                >Revisando
+                <h2>Cards</h2>
+              </small>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://blog.facialix.com/wp-content/uploads/2021/11/reactjs.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 titulo-badges">
+                    React JS
+                    <div class="badge">
+                      <span class="badge bg-warning">Javascript</span
+                      ><span class="badge bg-info">react</span>
+                    </div>
+                  </h5>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus ullam explicabo in veniam vel nostrum expedita
+                    iure qui ex velit dolorem debitis deserunt itaque, quidem
+                    atque soluta nihil accusamus! Quas?
+                  </p>
+                  <a href="#" class="btn btn-platzi">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="https://preview.redd.it/gc9jevarxyg51.jpg?auto=webp&s=5f29d355f704428e94d7d3e2c21763334d047bc9"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 titulo-badges">
+                    Sale Apex
+                    <div class="badge">
+                      <span class="badge bg-warning">Source</span
+                      ><span class="badge bg-info">1.4</span>
+                    </div>
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus ullam explicabo in veniam vel nostrum expedita
+                    iure qui ex velit dolorem debitis deserunt itaque, quidem
+                    atque soluta nihil accusamus! Quas?
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-platzi"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCardApex"
+                    >Go somewhere</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="Assets/img/hawaii3.jpeg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 titulo-badges">
+                    Sample Text
+                    <div class="badge">
+                      <span class="badge bg-warning">Sample</span
+                      ><span class="badge bg-info">TEXT</span>
+                    </div>
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus ullam explicabo in veniam vel nostrum expedita
+                    iure qui ex velit dolorem debitis deserunt itaque, quidem
+                    atque soluta nihil accusamus! Quas?
+                  </p>
+                  <a href="#" class="btn btn-platzi">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="Assets/img/hawaii.jpg"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mb-0 titulo-badges">
+                    Hawaii
+                    <div class="badge">
+                      <span class="badge bg-warning">Playa</span
+                      ><span class="badge bg-info">5498</span>
+                    </div>
+                  </h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatibus ullam explicabo in veniam vel nostrum expedita
+                    iure qui ex velit dolorem debitis deserunt itaque, quidem
+                    atque soluta nihil accusamus! Quas?
+                  </p>
+                  <a href="#" class="btn btn-platzi">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Lugar y Fecha -->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="https://media.timeout.com/images/105793098/image.jpg"
+              alt="Place"
+            />
+          </div>
+          <div class="col-12 col-lg-6 pt-4 pb-4">
+            <h2>Landscape</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              quia optio sapiente dolorum ullam saepe nostrum minima. Vel
+              adipisci obcaecati, eum enim fuga ducimus id sint, nemo voluptate
+              aliquam dolor?
+            </p>
+            <a href="#" class="btn btn-outline-light">read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Formularios -->
+    <section id="formulario" class="pt-2 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="text-uppercase">Contact us</small>
+            <h2>HERE</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Want to contact us? Apply through this
+            <span
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="around 5 minutes."
+            >
+              <span class="link-info">form</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="form-label col-12 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="name"
+              aria-label="name"
+            />
+          </div>
+          <div class="form-label col-12 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="last name"
+              aria-label="last name"
+              data-bs-toggle="tooltip"
+              data-bs-placement="right"
+              title="memes"
+            />
+          </div>
+        </div>
+        <div class="form-label">
+          <div class="col">
+            <textarea
+              name="text"
+              class="form-control form-control-lg"
+              placeholder="Tell us"
+            ></textarea>
+            <small class="form-text text-muted">
+              remember to send all information
+            </small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-success w-100">Apply</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="footer" class="pb-4 pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md text-md-center">
+            <a href="#">Preguntas Frecuentes</a>
+          </div>
+          <div class="col-12 col-md text-md-center">
+            <a href="#">Contáctanos</a>
+          </div>
+          <div class="col-12 col-md text-md-center"><a href="#">Prensa</a></div>
+          <div class="col-12 col-md text-md-center">
+            <a href="#">Privacidad</a>
+          </div>
+          <div class="col-12 col-md text-md-center"><a href="#">Jobs</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- MODAL -->
+  <div
+    class="modal fade"
+    id="modalVersion"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="Username" />
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              placeholder="User Mail"
+              class="form-control"
+            /><span class="input-group-text">@</span
+            ><input type="text" placeholder="Server" class="form-control" />
+          </div>
+          <div class="alert alert-success alert-dismissable">
+            Success! Thanks for subscribe to our newsletter.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" id="save_data" class="btn btn-primary">
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================================================================== -->
+
+  <div
+    class="modal fade"
+    id="modalCardApex"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sale apex altoke</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <img
+            src="https://preview.redd.it/gc9jevarxyg51.jpg?auto=webp&s=5f29d355f704428e94d7d3e2c21763334d047bc9"
+            class="imgmodal mb-4"
+          />
+          <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="SALE APEX" />
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              placeholder="User Mail"
+              class="form-control"
+            /><span class="input-group-text">@</span
+            ><input type="text" placeholder="Server" class="form-control" />
+          </div>
+          <div class="alert alert-success alert-dismissable">
+            Success! Thanks for subscribe to our newsletter.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+          <button type="button" id="save_data" class="btn btn-primary">
+            Launch Game /s
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>
